@@ -6,4 +6,4 @@
 hostname = *.camscanner.com, *.intsig.net
 
 [Script]
-CamScanner = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=true,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+CamScanner = type=http-response, pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=10
