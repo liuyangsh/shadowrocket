@@ -3,7 +3,7 @@
 #!author=自用
 
 [Mitm]
-hostname = *.camscanner.com, *.intsig.net
+hostname = ap*.intsig.net
 
 [Script]
-http-response ^https://.*.(intsig.net|camscanner.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true, timeout=10, tag=CamScanner
+http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js, requires-body=true, timeout=10, tag=CamScanner
